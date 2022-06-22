@@ -1,0 +1,44 @@
+PODS:
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/FTS (2.7.5):
+    - FMDB/standard
+  - FMDB/SQLCipher (2.7.5):
+    - SQLCipher
+  - FMDB/standalone (2.7.5):
+    - sqlite3
+  - FMDB/standalone/FTS (2.6.2):
+    - sqlite3/fts
+  - FMDB/standard (2.7.5)
+  - SQLCipher (4.5.1):
+    - SQLCipher/standard (= 4.5.1)
+  - SQLCipher/common (4.5.1)
+  - SQLCipher/standard (4.5.1):
+    - SQLCipher/common
+  - sqlite3 (3.38.5):
+    - sqlite3/common (= 3.38.5)
+  - sqlite3/common (3.38.5)
+  - sqlite3/fts (3.38.5):
+    - sqlite3/common
+
+DEPENDENCIES:
+  - FMDB
+  - FMDB/FTS
+  - FMDB/SQLCipher
+  - FMDB/standalone
+  - FMDB/standalone/FTS
+
+SPEC REPOS:
+  trunk:
+    - FMDB
+    - SQLCipher
+    - sqlite3
+
+SPEC CHECKSUMS:
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  SQLCipher: 712e8416685e8e575b9b0706ffee71678b2fdcf8
+  sqlite3: 93442daab2ab1825bc9c05faa85814a1996f5b65
+
+PODFILE CHECKSUM: febcfd1662439964210f9a521f284005d6a535bf
+
+COCOAPODS: 1.11.3

@@ -1,0 +1,6 @@
+framework module Pods_SwiftMemoryGame {
+  umbrella header "Pods-SwiftMemoryGame-umbrella.h"
+
+  export *
+  module * { export * }
+}
