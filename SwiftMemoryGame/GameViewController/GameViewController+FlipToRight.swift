@@ -9,7 +9,7 @@ extension GameViewController
                           options: UIView.AnimationOptions.transitionFlipFromLeft,
                           animations:
                             {
-            firstTile.text = "\(tileLabel.smile)"
+            firstTile.text = ""
             firstTile.backgroundColor = UIColor.green
         }
                           ,
@@ -20,7 +20,7 @@ extension GameViewController
                           options: UIView.AnimationOptions.transitionFlipFromLeft,
                           animations:
                             {
-            secondTile.text = "\(tileLabel.smile)"
+            secondTile.text = ""
             secondTile.backgroundColor = UIColor.green
         }
                           ,

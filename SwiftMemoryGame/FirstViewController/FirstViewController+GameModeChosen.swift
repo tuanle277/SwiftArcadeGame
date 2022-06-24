@@ -3,7 +3,7 @@ import UIKit
 extension FirstViewController
 {
     func gameModeChosen(alert: UIAlertAction!) {
-        switch chosenGameMode {
+        switch FirstViewController.chosenGameMode {
         case 4:
             chooseGameModeButton.titleLabel?.text = "4x4"
         case 6:
@@ -15,6 +15,6 @@ extension FirstViewController
         }
         chooseGameModeButton.titleLabel?.textAlignment = NSTextAlignment.center
         chooseGameModeButton.titleLabel?.font = .systemFont(ofSize: 36)
-        chosenGameMod = chosenGameMode
+        chosenGameMod = FirstViewController.chosenGameMode
     }
 }

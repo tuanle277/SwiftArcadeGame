@@ -2,42 +2,17 @@ import Foundation
 
 extension FirstViewController
 {
-    // compare times played
-    func isFaster (player1: Player, player2: Player) -> Bool
-    {
-        if player1.minutePlayed < player2.minutePlayed
-        {
-            return true
-        }
-        
-        else if player1.minutePlayed > player2.minutePlayed
-        {
-            return false
-        }
-        
-        else
-        {
-            if player1.secondPlayed <= player2.secondPlayed
-            {
-                return true
-            }
-            else
-            {
-                return false
-            }
-        }
-    }
-    
+  
     /* This function takes last element as pivot, places the pivot element at its correct position in sorted FirstViewController.datas, and places all smaller (smaller than pivot) to left of pivot and all greater elements to right of pivot */
     
-    func partition(low: Int, high: Int) -> Int
+    func partitionData(low: Int, high: Int) -> Int
     {
         let pivot = FirstViewController.datas[high]
         var i = low - 1
         
         for j in low...high - 1
         {
-            if isFaster(player1: FirstViewController.datas[j], player2: pivot)
+            if FirstViewController.isFaster(player1: FirstViewController.datas[j], player2: pivot)
             {
                 i += 1
                 // swap FirstViewController.datas[i] and FirstViewController.datas[j]
@@ -56,13 +31,13 @@ extension FirstViewController
     }
     
     // sort FirstViewController.datas of datas(Player)
-    func sort (low: Int, high: Int)
+    func sortDatas(low: Int, high: Int)
     {
         if low < high
         {
-            let pi = partition(low: low, high: high)
-            sort(low: low, high: pi - 1)
-            sort(low: pi + 1, high: high)
+            let pi = partitionData(low: low, high: high)
+            sortDatas(low: low, high: pi - 1)
+            sortDatas(low: pi + 1, high: high)
         }
         
     }

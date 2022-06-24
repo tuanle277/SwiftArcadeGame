@@ -19,7 +19,7 @@ extension FirstViewController
         gameModeAlert.addAction(UIAlertAction(title: "Continue", style: UIAlertAction.Style.default, handler: gameModeChosen))
         gameModeAlert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil))
         
-        chosenGameMode = 4
+        FirstViewController.chosenGameMode = 4
         self.present(gameModeAlert, animated: true, completion: nil)
         
         

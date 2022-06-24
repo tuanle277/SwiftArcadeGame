@@ -9,7 +9,7 @@ extension GameViewController
                           options: UIView.AnimationOptions.transitionFlipFromRight,
                           animations:
                             {
-            secondTile.text = "\(tileLabel.question)"
+            secondTile.text = ""
             secondTile.backgroundColor = UIColor.orange
         }
                           ,
@@ -20,7 +20,7 @@ extension GameViewController
                           options: UIView.AnimationOptions.transitionFlipFromRight,
                           animations:
                             {
-            firstTile.text = "\(tileLabel.question)"
+            firstTile.text = ""
             firstTile.backgroundColor = UIColor.orange
         }
                           ,

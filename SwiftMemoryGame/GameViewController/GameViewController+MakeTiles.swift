@@ -38,7 +38,7 @@ extension GameViewController
                 tile.data = "\(valueArr[randIndex])"
                 tile.textColor = UIColor.black
                 valueArr.remove(at: randIndex)
-                tile.text = tileLabel.question
+                tile.text = ""
                 tile.font = UIFont.systemFont(ofSize: 32)
                 tile.textAlignment = NSTextAlignment.center
                 let tileCen = CGPoint(x: xCen, y: yCen)

@@ -15,6 +15,8 @@ extension GameViewController
         }
         
         //Configure time finished and game mode finished
+        GameViewController.minutePlayed = gameTime / 60
+        GameViewController.secondPlayed = gameTime % 60
         let timeMin = String(format: "%02d", gameTime / 60)
         let timeSecond = String(format: "%2d", gameTime % 60)
         var gameModeWon: String!
@@ -33,15 +35,13 @@ extension GameViewController
         infoAlert.addAction(UIAlertAction(title: "Continue", style: .default)
                             {
             [weak infoAlert] _ in guard
-            let textFields = infoAlert?.textFields
-                 else
-                                { return }
+            let textFields = infoAlert?.textFields else { return }
             if let nameText = textFields[0].text{self.dismiss(animated: true);
-                FirstViewController.datas.append(Player(newName: nameText, newTime: "\(timeMin)\' : \(timeSecond)\"", newGame: gameModeWon));
+                FirstViewController.datas.append(Player(newName: nameText, newTime: "\(timeMin)\' : \(timeSecond)\"", newGame: gameModeWon, newMinute: GameViewController.minutePlayed, newSecond: GameViewController.secondPlayed));
                 FirstViewController.database.open();
                 do
                 {
-                    try FirstViewController.database.executeUpdate("INSERT into players (name, time, gamemode) VALUES (?, ?, ?)", values: [nameText, "\(timeMin)\' : \(timeSecond)\"", gameModeWon ?? NSNull()])
+                    try FirstViewController.database.executeUpdate("INSERT into players (name, time, gamemode, second, minute) VALUES (?, ?, ?, ?, ?)", values: [nameText, "\(timeMin)\' : \(timeSecond)\"", gameModeWon!, GameViewController.secondPlayed!, GameViewController.minutePlayed! ?? NSNull()])
                 }
                 catch
                 {

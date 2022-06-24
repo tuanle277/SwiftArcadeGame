@@ -16,11 +16,11 @@ extension FirstViewController
         
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
             if row == 0 {
-                chosenGameMode = 4
+                FirstViewController.chosenGameMode = 4
             } else if row == 1 {
-                chosenGameMode = 6
+                FirstViewController.chosenGameMode = 6
             } else if row == 2 {
-                chosenGameMode = 8
+                FirstViewController.chosenGameMode = 8
             }
     }
 }

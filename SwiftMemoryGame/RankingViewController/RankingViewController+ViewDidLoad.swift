@@ -6,5 +6,6 @@ extension RankingViewController
         super.viewDidLoad()
         configTable()
         FirstViewController.database.close()
+        
     }
 }

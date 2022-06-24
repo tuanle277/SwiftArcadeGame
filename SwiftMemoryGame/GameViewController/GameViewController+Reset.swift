@@ -22,7 +22,7 @@ extension GameViewController
             userInfo: nil,
             repeats: true
             )
-        gameMode = 4
+        gameMode = FirstViewController.chosenGameMode
         gameTime = 0
         makeTiles()
         

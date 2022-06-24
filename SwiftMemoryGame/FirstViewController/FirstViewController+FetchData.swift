@@ -21,7 +21,16 @@ extension FirstViewController
             let name: String = queryResults.string(forColumn: "name")!
             let time: String = queryResults.string(forColumn: "time")!
             let gameMode: String = queryResults.string(forColumn: "gamemode")!
-            FirstViewController.datas.append(Player(newName: name, newTime: time, newGame: gameMode))
+            let secondPlayed: Int = Int(queryResults.int(forColumn: "second"))
+            let minutePlayed: Int = Int(queryResults.int(forColumn: "minute"))
+            FirstViewController.datas.append(Player(newName: name, newTime: time, newGame: gameMode, newMinute: minutePlayed, newSecond: secondPlayed))
         }
+        FirstViewController.database.close()
+        sortDatas(low: 0, high: FirstViewController.datas.count - 1)
+
+//        for i in FirstViewController.datas
+//        {
+//            print(i.timeBeaten!)
+//        }
     }
 }

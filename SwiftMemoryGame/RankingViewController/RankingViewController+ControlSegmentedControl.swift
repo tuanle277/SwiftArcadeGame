@@ -32,8 +32,13 @@ extension RankingViewController
             guard let name = resultQuery.string(forColumn: "name") else { return }
             let time = resultQuery.string(forColumn: "time")
             let gameMode = resultQuery.string(forColumn: "gamemode")
-            filteredArray.append(Player(newName: name, newTime: time!, newGame: gameMode!))
+            let minute = Int(resultQuery.int(forColumn: "minute"))
+            let second = Int(resultQuery.int(forColumn: "second"))
+            filteredArray.append(Player(newName: name, newTime: time!, newGame: gameMode!, newMinute: minute, newSecond: second))
         }
+        
+        sortFilters(low: 0, high: filteredArray.count - 1)
+        
         FirstViewController.database.close()
         tableView.reloadData()
     }

@@ -14,6 +14,8 @@ class GameViewController: UIViewController {
     var gameTime: Int = 0
     var gameTimer: Timer!
     var tileFlipped: Int = 0
+    static var minutePlayed: Int!
+    static var secondPlayed: Int!
 
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var gameView: UIView!
