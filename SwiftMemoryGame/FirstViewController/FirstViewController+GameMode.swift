@@ -22,7 +22,5 @@ extension FirstViewController
         FirstViewController.chosenGameMode = 4
         self.present(gameModeAlert, animated: true, completion: nil)
         
-        
-        
     }
 }

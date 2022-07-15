@@ -29,6 +29,9 @@
 		A441EFC928617ACF00250CCA /* FirstViewController+GameMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A441EFC828617ACF00250CCA /* FirstViewController+GameMode.swift */; };
 		A441EFCB28617E2400250CCA /* FirstViewController+PickerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A441EFCA28617E2400250CCA /* FirstViewController+PickerConfig.swift */; };
 		A441EFCD286182C700250CCA /* FirstViewController+GameModeChosen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A441EFCC286182C700250CCA /* FirstViewController+GameModeChosen.swift */; };
+		A446BDC32879CEB80008993F /* FirstViewController+SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A446BDC22879CEB80008993F /* FirstViewController+SignIn.swift */; };
+		A446BDC52879D5800008993F /* FirstViewController+SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A446BDC42879D5800008993F /* FirstViewController+SignUp.swift */; };
+		A446BDC72879DC550008993F /* FirstViewController+SearchUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A446BDC62879DC550008993F /* FirstViewController+SearchUser.swift */; };
 		A453ACAF2861F8660039DFB4 /* FirstViewController+ViewDidAppear.swift in Sources */ = {isa = PBXBuildFile; fileRef = A453ACAE2861F8660039DFB4 /* FirstViewController+ViewDidAppear.swift */; };
 		A453ACB12861FBCF0039DFB4 /* Note in Sources */ = {isa = PBXBuildFile; fileRef = A453ACB02861FBCF0039DFB4 /* Note */; };
 		A45D5F652861BA3A009C86C7 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45D5F642861BA3A009C86C7 /* RankingViewController.swift */; };
@@ -105,6 +108,9 @@
 		A441EFC828617ACF00250CCA /* FirstViewController+GameMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FirstViewController+GameMode.swift"; sourceTree = "<group>"; };
 		A441EFCA28617E2400250CCA /* FirstViewController+PickerConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FirstViewController+PickerConfig.swift"; sourceTree = "<group>"; };
 		A441EFCC286182C700250CCA /* FirstViewController+GameModeChosen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FirstViewController+GameModeChosen.swift"; sourceTree = "<group>"; };
+		A446BDC22879CEB80008993F /* FirstViewController+SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FirstViewController+SignIn.swift"; sourceTree = "<group>"; };
+		A446BDC42879D5800008993F /* FirstViewController+SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FirstViewController+SignUp.swift"; sourceTree = "<group>"; };
+		A446BDC62879DC550008993F /* FirstViewController+SearchUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FirstViewController+SearchUser.swift"; sourceTree = "<group>"; };
 		A453ACAE2861F8660039DFB4 /* FirstViewController+ViewDidAppear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FirstViewController+ViewDidAppear.swift"; sourceTree = "<group>"; };
 		A453ACB02861FBCF0039DFB4 /* Note */ = {isa = PBXFileReference; lastKnownFileType = text; path = Note; sourceTree = "<group>"; };
 		A45D5F642861BA3A009C86C7 /* RankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
@@ -220,7 +226,10 @@
 				A441EFC828617ACF00250CCA /* FirstViewController+GameMode.swift */,
 				A441EFC628617A5000250CCA /* FirstViewController+PrepareForSegue.swift */,
 				A441EFC428617A2300250CCA /* FirstViewController+ViewDidLoad.swift */,
+				A446BDC22879CEB80008993F /* FirstViewController+SignIn.swift */,
+				A446BDC42879D5800008993F /* FirstViewController+SignUp.swift */,
 				A4785BA02864052400ABE9DD /* FirstViewController+CreateDatabase.swift */,
+				A446BDC62879DC550008993F /* FirstViewController+SearchUser.swift */,
 				A43ED2192862B83200221E95 /* FirstViewController+ConfigDatabase.swift */,
 				A43ED2202862BE0700221E95 /* FirstViewController+FetchData.swift */,
 				A453ACAE2861F8660039DFB4 /* FirstViewController+ViewDidAppear.swift */,
@@ -438,9 +447,11 @@
 				A4783BD228607E5B00C8F058 /* GameViewController+RevealThenCompare.swift in Sources */,
 				A4783BC828606C1000C8F058 /* GameViewController+TouchesEnded.swift in Sources */,
 				A45D5F6A2861BB10009C86C7 /* RankingCell.swift in Sources */,
+				A446BDC32879CEB80008993F /* FirstViewController+SignIn.swift in Sources */,
 				A43ED21A2862B83200221E95 /* FirstViewController+ConfigDatabase.swift in Sources */,
 				A45D5F6F2861C2AD009C86C7 /* FirstViewController+ConfigDummyData.swift in Sources */,
 				A45D5F732861C2FD009C86C7 /* RankingViewController+TableDelegates.swift in Sources */,
+				A446BDC72879DC550008993F /* FirstViewController+SearchUser.swift in Sources */,
 				A4783BD02860760100C8F058 /* GameViewController+FlipToWrong.swift in Sources */,
 				A43ED2212862BE0700221E95 /* FirstViewController+FetchData.swift in Sources */,
 				A441EFC728617A5000250CCA /* FirstViewController+PrepareForSegue.swift in Sources */,
@@ -464,6 +475,7 @@
 				A43ED2302863043000221E95 /* GameViewController+TimerRun.swift in Sources */,
 				A4277E20286051FB007F66D5 /* SceneDelegate.swift in Sources */,
 				A45D5F672861BAA6009C86C7 /* Player.swift in Sources */,
+				A446BDC52879D5800008993F /* FirstViewController+SignUp.swift in Sources */,
 				A4783BCC2860726C00C8F058 /* GameViewController+FlipToRight.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

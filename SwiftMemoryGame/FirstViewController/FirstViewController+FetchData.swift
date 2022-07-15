@@ -6,10 +6,10 @@ extension FirstViewController
     func fetchData()
     {
         print("Fetching data...")
-
+        FirstViewController.database.open()
         do
         {
-            queryResults = try FirstViewController.database.executeQuery("SELECT * FROM players", values: nil)
+            queryResults = try FirstViewController.database.executeQuery("SELECT * FROM players where gamemode = '4x4'", values: nil)
             print("query results got")
         }
         catch
@@ -28,9 +28,11 @@ extension FirstViewController
         FirstViewController.database.close()
         sortDatas(low: 0, high: FirstViewController.datas.count - 1)
 
-//        for i in FirstViewController.datas
-//        {
-//            print(i.timeBeaten!)
-//        }
+        for i in FirstViewController.datas
+        {
+            print(i.timeBeaten!)
+        }
+        
+        FirstViewController.database.close()
     }
 }

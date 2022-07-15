@@ -10,11 +10,15 @@ class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     static var database: FMDatabase!
     var queryResults: FMResultSet!
     static var datas: Array <Player> = []
+    var isNotSignedIn: Bool!
+    static var username: String!
 
     @IBOutlet weak var chooseGameModeButton: UIButton!
-    
+    @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var signInButton: UIButton!
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var countDownButton: UIButton!
 
-    
 
+    
 }

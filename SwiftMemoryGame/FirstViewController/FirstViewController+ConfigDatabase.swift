@@ -13,7 +13,7 @@ extension FirstViewController
         let fileManager = FileManager.default
         let dirPath = fileManager.urls(for: .documentDirectory, in: .userDomainMask)
         let documentDirectory = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString) as String
-        let dbFileName = "players.sqlite3"
+        let dbFileName = "player.sqlite3"
         let docsDir = dirPath[0].path
         fileManager.changeCurrentDirectoryPath(docsDir)
         
@@ -41,21 +41,35 @@ extension FirstViewController
             }
             catch
             {
-                print("error making table")
+                print("error making player table")
             }
         }
         
-//        for i: Player in FirstViewController.datas
-//        {
-//            do
-//            {
-//                print("dummy data put")
-//                try FirstViewController.database.executeUpdate("INSERT into players (name, time, gamemode, second, minute) VALUES (?, ?, ?, ?, ?)", values: [i.name!, i.timeBeaten!, i.gameModePlayed!, i.secondPlayed!, i.minutePlayed! ?? NSNull()])
-//            }
-//            catch
-//            {
-//                print("Cannot make new data")
-//            };
-//        }
+        if !FirstViewController.database.tableExists("signInfo")
+        {
+            do
+            {
+                try FirstViewController.database.executeUpdate("create table signInfo(username text, password text)", values: nil)
+            }
+            catch
+            {
+                print("error making signInfo table")
+            }
+        }
+        
+        for i: Player in FirstViewController.datas
+        {
+            do
+            {
+                print("dummy data put")
+                try FirstViewController.database.executeUpdate("INSERT into players (name, time, gamemode, second, minute) VALUES (?, ?, ?, ?, ?)", values: [i.name!, i.timeBeaten!, i.gameModePlayed!, i.secondPlayed!, i.minutePlayed! ?? NSNull()])
+            }
+            catch
+            {
+                print("Cannot make new data")
+            };
+        }
+        
+        FirstViewController.database.close()
     }
 }

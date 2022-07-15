@@ -1,6 +1,6 @@
 import UIKit
 
-class Player: NSObject {
+final class Player: NSObject {
     
     var name: String!
     var minutePlayed: Int!
