@@ -17,6 +17,7 @@ class GameViewController: UIViewController {
     static var minutePlayed: Int!
     static var secondPlayed: Int!
 
+    @IBOutlet weak var resetButton: UIButton!
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var gameView: UIView!
     @IBOutlet weak var resultLabel: UILabel!

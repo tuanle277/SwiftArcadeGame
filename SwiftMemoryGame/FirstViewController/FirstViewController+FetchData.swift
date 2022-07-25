@@ -27,12 +27,5 @@ extension FirstViewController
         }
         FirstViewController.database.close()
         sortDatas(low: 0, high: FirstViewController.datas.count - 1)
-
-        for i in FirstViewController.datas
-        {
-            print(i.timeBeaten!)
-        }
-        
-        FirstViewController.database.close()
     }
 }

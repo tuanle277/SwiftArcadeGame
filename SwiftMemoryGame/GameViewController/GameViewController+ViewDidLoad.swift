@@ -6,6 +6,7 @@ extension GameViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        configureUIs()
         runTimer()
         makeTiles()
 

@@ -69,6 +69,7 @@ extension FirstViewController
             }
         }
 )
+        signUpAlert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel))
         self.present(signUpAlert, animated: true, completion: nil)
     }
 }

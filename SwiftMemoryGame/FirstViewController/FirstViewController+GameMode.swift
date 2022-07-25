@@ -18,6 +18,7 @@ extension FirstViewController
         //add actions to alert
         gameModeAlert.addAction(UIAlertAction(title: "Continue", style: UIAlertAction.Style.default, handler: gameModeChosen))
         gameModeAlert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil))
+        gameModeAlert.view.layer.backgroundColor = UIColor.clear.cgColor
         
         FirstViewController.chosenGameMode = 4
         self.present(gameModeAlert, animated: true, completion: nil)

@@ -2,8 +2,10 @@ import UIKit
 
 extension FirstViewController
 {
-    func gameModeChosen(alert: UIAlertAction!) {
-        switch FirstViewController.chosenGameMode {
+    func gameModeChosen(alert: UIAlertAction!)
+    {
+        switch FirstViewController.chosenGameMode
+        {
         case 4:
             chooseGameModeButton.titleLabel?.text = "4x4"
         case 6:

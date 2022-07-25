@@ -44,7 +44,7 @@ extension GameViewController
                 let tileCen = CGPoint(x: xCen, y: yCen)
                 tile.center = tileCen
                 xCen += tileWidth
-                tile.backgroundColor = UIColor.orange
+                tile.backgroundColor = UIColor.cyan
                 gameView.addSubview(tile)
             }
             xCen = tileWidth / 2.0

@@ -12,7 +12,6 @@ extension GameViewController
         
         timerLabel.textAlignment = NSTextAlignment.center
         timerLabel.textColor = UIColor.red
-        timerLabel.font = UIFont.systemFont(ofSize: 40)
         timerLabel.text = ("\(timeMin)\' : \(timeSecond)\"")
     }
 

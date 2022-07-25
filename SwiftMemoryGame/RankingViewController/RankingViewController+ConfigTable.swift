@@ -2,6 +2,7 @@ import UIKit
 
 extension RankingViewController
 {
+    
     func configTable()
     {
         tableView.delegate = self
@@ -9,5 +10,6 @@ extension RankingViewController
         tableView.register(UINib(nibName: "RankingCell", bundle: nil), forCellReuseIdentifier: RankingCell.identifier)
         tableView.rowHeight = 130
         tableView.estimatedRowHeight = 130
+        tableView.separatorStyle = .singleLine
     }
 }
