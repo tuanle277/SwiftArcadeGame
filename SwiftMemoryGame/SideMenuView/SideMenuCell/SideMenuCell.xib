@@ -36,7 +36,7 @@
                 <outlet property="icon" destination="l81-Mj-SSC" id="B4O-1Z-iC9"/>
                 <outlet property="title" destination="vpn-0B-Qg2" id="HbR-U9-ugG"/>
             </connections>
-            <point key="canvasLocation" x="131.8840579710145" y="76.004464285714278"/>
+            <point key="canvasLocation" x="131.8840579710145" y="75.669642857142847"/>
         </tableViewCell>
     </objects>
 </document>

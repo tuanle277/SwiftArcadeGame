@@ -4,6 +4,6 @@ extension FirstViewController
 {
     @IBAction func toRanking(_ sender: UIButton)
     {
-        performSegue(withIdentifier: "ranking", sender: nil)
+        performSegue(withIdentifier: "toRanking", sender: nil)
     }
 }

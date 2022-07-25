@@ -1,6 +1,6 @@
 import UIKit
 
-extension FirstViewController
+extension HomeViewController
 {
     func configureSideMenu()
     {

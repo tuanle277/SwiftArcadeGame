@@ -19,15 +19,15 @@ extension SideMenuView
         switch indexPath.row
         {
         case 0:
-            print("Home")
+            sideMenuDelegate.screenChosen(screen: "toProfile")
         case 1:
-            print("Profile")
-        case 2:
-            print("Setting")
+            sideMenuDelegate.screenChosen(screen: "toSetting")
         default:
             break
         }
     }
     
+
+
 }
 

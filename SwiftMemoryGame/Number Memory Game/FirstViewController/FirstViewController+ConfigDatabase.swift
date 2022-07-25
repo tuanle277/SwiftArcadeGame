@@ -57,18 +57,18 @@ extension FirstViewController
             }
         }
         
-        for i: Player in FirstViewController.datas
-        {
-            do
-            {
-                print("dummy data put")
-                try FirstViewController.database.executeUpdate("INSERT into players (name, time, gamemode, second, minute) VALUES (?, ?, ?, ?, ?)", values: [i.name!, i.timeBeaten!, i.gameModePlayed!, i.secondPlayed!, i.minutePlayed! ?? NSNull()])
-            }
-            catch
-            {
-                print("Cannot make new data")
-            };
-        }
+//        for i: Player in FirstViewController.datas
+//        {
+//            do
+//            {
+//                print("dummy data put")
+//                try FirstViewController.database.executeUpdate("INSERT into players (name, time, gamemode, second, minute) VALUES (?, ?, ?, ?, ?)", values: [i.name!, i.timeBeaten!, i.gameModePlayed!, i.secondPlayed!, i.minutePlayed! ?? NSNull()])
+//            }
+//            catch
+//            {
+//                print("Cannot make new data")
+//            };
+//        }
         
         FirstViewController.database.close()
     }

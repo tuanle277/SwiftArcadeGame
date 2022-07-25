@@ -10,8 +10,8 @@ extension FirstViewController
         self.titleLabel.font = UIFont(name: "Times New Roman Bold", size: 36)!
         self.titleLabelBackground.layer.borderWidth = 1.5
         self.titleLabelBackground.layer.borderColor = UIColor.brown.cgColor
-        self.shadowView.alpha = 0
-        self.shadowView.isUserInteractionEnabled = true
+//        self.shadowView.alpha = 0
+//        self.shadowView.isUserInteractionEnabled = true
         
         let gradientLayer = CAGradientLayer()
         gradientLayer.colors = [colorTop, colorBottom]
@@ -33,7 +33,7 @@ extension FirstViewController
         gradientLayer2.frame = self.rankingButtonBackground.bounds
         self.rankingButtonBackground.layer.insertSublayer(gradientLayer2, at: 0)
         self.rankingButtonBackground.clipsToBounds = true
-        
+
         self.startGameButtonBackground.layer.cornerRadius = 30;
         self.rankingButtonBackground.layer.cornerRadius = 30;
         self.chooseGameModeButtonBackground.layer.cornerRadius = 30;

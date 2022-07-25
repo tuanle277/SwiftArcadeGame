@@ -20,8 +20,8 @@
             <rect key="frame" x="0.0" y="0.0" width="292" height="851"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4fG-W6-2pA">
-                    <rect key="frame" x="-2" y="269.5" width="292" height="615.5"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4fG-W6-2pA">
+                    <rect key="frame" x="-2" y="269.5" width="289" height="615.5"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfB-iA-O8k">
@@ -39,7 +39,7 @@
             <constraints>
                 <constraint firstItem="4fG-W6-2pA" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="34" id="G5F-5P-0YH"/>
                 <constraint firstItem="4fG-W6-2pA" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.723214" id="Xll-wS-tiS"/>
-                <constraint firstItem="4fG-W6-2pA" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="1.004" id="gFx-Wb-RTO"/>
+                <constraint firstItem="4fG-W6-2pA" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.99" id="gFx-Wb-RTO"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="leading" secondItem="4fG-W6-2pA" secondAttribute="leading" constant="2" id="jl0-tQ-vLd"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

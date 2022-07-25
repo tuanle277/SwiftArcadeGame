@@ -26,4 +26,12 @@ extension RankingViewController
         cell.setUp(player: data, indexPath: indexPath)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let frame = cell.frame
+        cell.frame = CGRect(x: 0, y: self.tableView.frame.height, width: frame.width, height: frame.height)
+        UIView.animate(withDuration: 0.3, delay: 0.0, options: UIView.AnimationOptions.transitionCrossDissolve, animations: { () -> Void in
+            cell.frame = frame
+        }, completion: nil)
+    }
 }

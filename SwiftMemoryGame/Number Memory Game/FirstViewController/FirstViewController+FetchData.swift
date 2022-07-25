@@ -26,6 +26,7 @@ extension FirstViewController
             FirstViewController.datas.append(Player(newName: name, newTime: time, newGame: gameMode, newMinute: minutePlayed, newSecond: secondPlayed))
         }
         FirstViewController.database.close()
-        sortDatas(low: 0, high: FirstViewController.datas.count - 1)
+//        sortDatas(low: 0, high: FirstViewController.datas.count - 1)
+        FirstViewController.database.close()
     }
 }

@@ -37,7 +37,7 @@ extension RankingViewController
             filteredArray.append(Player(newName: name, newTime: time!, newGame: gameMode!, newMinute: minute, newSecond: second))
         }
         
-        sortFilters(low: 0, high: filteredArray.count - 1)
+//        sortFilters(low: 0, high: filteredArray.count - 1)
         
         FirstViewController.database.close()
         tableView.reloadData()

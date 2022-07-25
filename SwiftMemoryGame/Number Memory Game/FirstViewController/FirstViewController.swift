@@ -29,18 +29,17 @@ class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     static var username: String!
     var sideMenuOpened: Bool = false
     
-    @IBOutlet weak var shadowView: UIView!
-    @IBOutlet weak var sideMenuView: UIView!
+    @IBAction func backHomeAction(_ sender: UIButton) {
+        dismiss(animated: true)
+    }
+    @IBOutlet weak var sideMenuView: SideMenuView!
     @IBOutlet weak var startGameButtonBackground: UIView!
     @IBOutlet weak var startGameButton: UIButton!
     @IBOutlet weak var chooseGameModeButtonBackground: UIView!
     @IBOutlet weak var chooseGameModeButton: UIButton!
     @IBOutlet weak var rankingButtonBackground: UIView!
     @IBOutlet weak var rankingButton: UIButton!
-    @IBOutlet weak var signUpButton: UIButton!
-    @IBOutlet weak var signInButton: UIButton!
+
     @IBOutlet weak var titleLabelBackground: UIView!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var nameLabel: UILabel!
-
 }
