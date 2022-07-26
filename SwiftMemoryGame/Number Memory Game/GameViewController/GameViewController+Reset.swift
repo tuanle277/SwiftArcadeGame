@@ -9,6 +9,7 @@ extension GameViewController
         {
             any.removeFromSuperview()
         }
+        
         if (gameTimer != nil)
         {
             gameTimer.invalidate()

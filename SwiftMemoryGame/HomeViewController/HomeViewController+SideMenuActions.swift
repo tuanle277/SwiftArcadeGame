@@ -56,7 +56,6 @@ extension HomeViewController
         }
         
         override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-            print("touches still work")
             if sideMenuOpened
             {
                 print("touches")

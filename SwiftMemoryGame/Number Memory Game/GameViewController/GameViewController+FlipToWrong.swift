@@ -10,7 +10,7 @@ extension GameViewController
                           animations:
                             {
             secondTile.text = ""
-            secondTile.backgroundColor = UIColor.cyan
+            secondTile.backgroundColor = UIColor.systemTeal
         }
                           ,
                           completion: nil
@@ -21,7 +21,7 @@ extension GameViewController
                           animations:
                             {
             firstTile.text = ""
-            firstTile.backgroundColor = UIColor.cyan
+            firstTile.backgroundColor = UIColor.systemTeal
         }
                           ,
                           completion: nil

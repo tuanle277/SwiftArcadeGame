@@ -82,7 +82,7 @@ extension GameViewController
             catch
             {
                 print("Cannot make new data")
-            };
+            }
             FirstViewController.database.close()
         }
         

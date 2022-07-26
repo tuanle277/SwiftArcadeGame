@@ -4,12 +4,12 @@ extension HomeViewController
 {
     func setGradientBackground()
     {
-        let colorTop =  UIColor(red: 40.0/255.0, green: 60.0/255.0, blue: 255.0/255.0, alpha: 0.4).cgColor
-        let colorBottom = UIColor(red: 10.0/255.0, green: 10.0/255.0, blue: 100.0/255.0, alpha: 0.6).cgColor
+        let colorTop =  UIColor(red: 3.0/255.0, green: 201.0/255.0, blue: 223.0/255.0, alpha: 1).cgColor
+        let colorBottom = UIColor(red: 3.0/255.0, green: 223.0/255.0, blue: 157.0/255.0, alpha: 0.6).cgColor
                     
         let gradientLayer = CAGradientLayer()
-        gradientLayer.colors = [colorBottom, colorTop, colorBottom]
-        gradientLayer.locations = [0.0, 0.2, 0.6]
+        gradientLayer.colors = [colorTop, colorBottom]
+        gradientLayer.locations = [0.2, 0.7]
         gradientLayer.frame = self.view.bounds
                 
         self.view.layer.insertSublayer(gradientLayer, at:0)

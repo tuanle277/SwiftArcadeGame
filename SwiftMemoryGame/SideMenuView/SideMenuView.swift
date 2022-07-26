@@ -38,7 +38,6 @@ class SideMenuView: UIView, UITableViewDelegate, UITableViewDataSource
         sideMenuView.isUserInteractionEnabled = true
         titleLabel.text = "Kevin"
         titleLabel.textColor = UIColor.black
-        titleLabel.layer.borderWidth = 1.5
         titleLabel.layer.borderColor = UIColor.black.cgColor
         sideMenuView.frame = self.bounds
         configureTableView()

@@ -21,6 +21,8 @@ extension HomeViewController
             performSegue(withIdentifier: "toTicTacToe", sender: nil)
         case 1:
             performSegue(withIdentifier: "toNumberMemory", sender: nil)
+        case 0:
+            performSegue(withIdentifier: "toRPS", sender: nil)
         default:
             return
         }

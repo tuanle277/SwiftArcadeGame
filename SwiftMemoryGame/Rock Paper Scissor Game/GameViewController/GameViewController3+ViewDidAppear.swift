@@ -1,10 +1,9 @@
 import UIKit
 
-extension FirstViewController
+extension GameViewController3
 {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-//        configDummyData()
-
+        configureGameUIs()
     }
 }

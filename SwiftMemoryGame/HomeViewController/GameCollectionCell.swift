@@ -8,7 +8,7 @@ class GameCollectionCell: UICollectionViewCell {
     {
         titleLabel.text = game.title
         cellBackgroundView.backgroundColor = game.backgroundColor
-        cellBackgroundView.layer.cornerRadius = 17.0
+        cellBackgroundView.layer.cornerRadius = 32.0
         cellBackgroundView.alpha = 0.8
     }
 

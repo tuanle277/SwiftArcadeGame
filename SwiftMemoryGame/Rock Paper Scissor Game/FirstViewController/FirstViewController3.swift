@@ -1,6 +1,12 @@
 import UIKit
 
-class FirstViewController2: UIViewController {
+class FirstViewController3: UIViewController {
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var titleLabelBackground: UIView!
+    @IBOutlet weak var gameModeBackground: UIView!
+    @IBOutlet weak var startGameBackground: UIView!
+    
+    
     func setGradientBackground()
     {
         let colorTop =  UIColor(red: 0/255.0, green: 60.0/255.0, blue: 255.0/255.0, alpha: 0.3).cgColor
@@ -13,23 +19,20 @@ class FirstViewController2: UIViewController {
                 
         self.view.layer.insertSublayer(gradientLayer, at:0)
     }
-    @IBAction func backHomeAction(_ sender: Any) {
+    
+    @IBAction func startGameAction(_ sender: UIButton) {
+        performSegue(withIdentifier: "startGame", sender: nil)
+    }
+    @IBAction func backButtonAction(_ sender: UIButton) {
         dismiss(animated: true)
     }
-    
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var titleLabelBackground: UIView!
-    @IBOutlet weak var startGameBackground: UIView!
-    @IBOutlet weak var gameModeBackground: UIView!
-    @IBAction func startGameAction(_ sender: UIButton) {
-    }
-    @IBAction func gameModeAction(_ sender: UIButton) {
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        GameViewController3.gameLoaded = false
+        print(GameViewController3.gameLoaded)
         configureUIs()
         setGradientBackground()
+
         // Do any additional setup after loading the view.
     }
     

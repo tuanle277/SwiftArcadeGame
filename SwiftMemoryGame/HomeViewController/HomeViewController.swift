@@ -1,9 +1,12 @@
 import UIKit
+import FMDB
 
 class HomeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
+    var screenLoaded: Int = 0
+    var queryResults: FMResultSet!
     var sideMenuOpened: Bool = false
-    var datas: Array<Game> = [Game.init(newTitle: "Rock paper scizzor", newBackgroundColor: UIColor.systemTeal), Game.init(newTitle: "Number memory", newBackgroundColor: UIColor.purple), Game.init(newTitle: "Tic Tac Toe", newBackgroundColor: UIColor.red)]
+    var datas: Array<Game> = [Game.init(newTitle: "Rock paper scissor", newBackgroundColor: UIColor.orange), Game.init(newTitle: "Number memory", newBackgroundColor: UIColor.purple), Game.init(newTitle: "Tic Tac Toe", newBackgroundColor: UIColor.red)]
     
     @IBOutlet weak var sideMenuView: SideMenuView!
     @IBOutlet weak var shadowView: UIView!
