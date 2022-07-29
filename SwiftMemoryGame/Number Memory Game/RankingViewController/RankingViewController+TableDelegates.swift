@@ -3,6 +3,7 @@ import UIKit
 extension RankingViewController
 {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(FirstViewController.datas)
         if !isFiltered
         {
             return FirstViewController.datas.count

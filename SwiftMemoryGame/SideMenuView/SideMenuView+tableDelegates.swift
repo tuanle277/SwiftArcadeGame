@@ -19,7 +19,7 @@ extension SideMenuView
         switch indexPath.row
         {
         case 0:
-            sideMenuDelegate.screenChosen(screen: "toProfile")
+            sideMenuDelegate.signIn()
         case 1:
             sideMenuDelegate.screenChosen(screen: "toSetting")
         default:

@@ -1,10 +1,9 @@
 import UIKit
 
-extension RankingViewController
+extension RankingViewController2
 {
     override func viewDidLoad() {
         super.viewDidLoad()
         configTable()
-        
     }
 }

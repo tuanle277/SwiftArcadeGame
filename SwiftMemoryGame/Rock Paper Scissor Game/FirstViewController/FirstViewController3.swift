@@ -29,7 +29,6 @@ class FirstViewController3: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         GameViewController3.gameLoaded = false
-        print(GameViewController3.gameLoaded)
         configureUIs()
         setGradientBackground()
 

@@ -7,5 +7,6 @@ extension GameViewController3
         self.currentPlayerLabel.textColor = UIColor.black
         self.playerResult.text = ""
         self.botResult.text = ""
+        self.currentPlayerLabel.text = ""
     }
 }

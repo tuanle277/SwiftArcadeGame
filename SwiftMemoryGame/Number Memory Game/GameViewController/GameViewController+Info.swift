@@ -4,7 +4,7 @@ import FMDB
 extension GameViewController
 {
     func takeWinnerInfo() {
-        if FirstViewController.username == nil
+        if HomeViewController.profileName == nil
         {
             //configure alert
             let infoAlert = UIAlertController(title: "You Win!", message: "Enter your information", preferredStyle: UIAlertController.Style.alert)
@@ -73,17 +73,18 @@ extension GameViewController
                     break
             }
             
-            FirstViewController.datas.append(Player(newName: FirstViewController.username, newTime: "\(timeMin)\' : \(timeSecond)\"", newGame: gameModeWon, newMinute: GameViewController.minutePlayed, newSecond: GameViewController.secondPlayed));
+            FirstViewController.datas.append(Player(newName: HomeViewController.profileName, newTime: "\(timeMin)\' : \(timeSecond)\"", newGame: gameModeWon, newMinute: GameViewController.minutePlayed, newSecond: GameViewController.secondPlayed));
             FirstViewController.database.open();
             do
             {
-                try FirstViewController.database.executeUpdate("INSERT into players (name, time, gamemode, second, minute) VALUES (?,  ?, ?, ?, ?)", values: [FirstViewController.username, "\(timeMin)\' : \(timeSecond)\"", gameModeWon!, GameViewController.secondPlayed!, GameViewController.minutePlayed!])
+                try FirstViewController.database.executeUpdate("INSERT into players (name, time, gamemode, second, minute) VALUES (?,  ?, ?, ?, ?)", values: [HomeViewController.profileName!, "\(timeMin)\' : \(timeSecond)\"", gameModeWon!, GameViewController.secondPlayed!, GameViewController.minutePlayed!])
             }
             catch
             {
                 print("Cannot make new data")
             }
             FirstViewController.database.close()
+            dismiss(animated: true)
         }
         
     }

@@ -16,6 +16,7 @@ class GameViewController2: UIViewController {
     var player1sScore: Int = 0
     var player2sScore: Int = 0
     var tilesArr: Array<UIView> = []
+    var filled: Int = 0
 
     /*
     // MARK: - Navigation

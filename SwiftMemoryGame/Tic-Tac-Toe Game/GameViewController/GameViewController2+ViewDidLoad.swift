@@ -7,6 +7,7 @@ extension GameViewController2
         makeTiles()
         self.currentPlayerLabel.font = UIFont(name: "Times New Roman Bold", size: 50)
         self.currentPlayerLabel.adjustsFontSizeToFitWidth = true
+        self.currentPlayerLabel.textColor = UIColor.black
         self.currentPlayerLabel.text = "Player 1's turn"
     }
 }

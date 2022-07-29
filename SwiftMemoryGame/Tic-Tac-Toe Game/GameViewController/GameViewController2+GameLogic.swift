@@ -4,7 +4,14 @@ extension GameViewController2
 {
     func checkWin(winner: String)
     {
-        if rowCrossed() || colCrossed() || diagCrossed()
+        if filled == 9 && !rowCrossed() && !colCrossed() && !diagCrossed()
+        {
+            print("draw")
+            gameView.isUserInteractionEnabled = false
+            self.currentPlayerLabel.textColor = UIColor.red
+            self.currentPlayerLabel.text = "Draw"
+        }
+        else if rowCrossed() || colCrossed() || diagCrossed()
         {
             gameView.isUserInteractionEnabled = false
             self.currentPlayerLabel.textColor = UIColor.red
@@ -14,7 +21,6 @@ extension GameViewController2
                 player1Score.text = String(player1sScore)
                 self.currentPlayerLabel.text = "Player 1 wins!"
             }
-            
             else
             {
                 player2sScore += 1

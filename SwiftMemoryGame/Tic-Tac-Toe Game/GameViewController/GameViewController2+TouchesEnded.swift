@@ -11,24 +11,30 @@ extension GameViewController2
         {
             tappedTile.text = "O"
             tappedTile.alpha = 0.0
+            tappedTile.textColor = UIColor.black
             UIView.animate(withDuration: 1.0, //Time duration you want,
                         delay: 0.0,
                         animations: { () in tappedTile.alpha = 1.0 })
             gameBeingPlayed[game[tappedTile.tag][0]][game[tappedTile.tag][1]] = "O"
             currentPlayer += 1
             self.currentPlayerLabel.text = "Player 2's turn"
+            self.currentPlayerLabel.textColor = UIColor.black
+            filled += 1
             checkWin(winner: "0")
         }
         else
         {
             tappedTile.text = "X"
             tappedTile.alpha = 0.0
+            tappedTile.textColor = UIColor.black
             UIView.animate(withDuration: 1.0, //Time duration you want,
                         delay: 0.0,
                         animations: { () in tappedTile.alpha = 1.0 })
             gameBeingPlayed[game[tappedTile.tag][0]][game[tappedTile.tag][1]] = "X"
             currentPlayer -= 1
             self.currentPlayerLabel.text = "Player 1's turn"
+            self.currentPlayerLabel.textColor = UIColor.black
+            filled += 1
             checkWin(winner: "X")
         }
         tappedTile.font = UIFont.systemFont(ofSize: tappedTile.frame.height)

@@ -6,8 +6,11 @@ extension HomeViewController
         super.viewDidAppear(true)
         if screenLoaded == 0
         {
-            configDatabase()
-            fetchData()
+            configDummyData2()
+            configDatabase1()
+            configDatabase2()
+            fetchDataNum()
+            fetchDataDin()
             screenLoaded += 1
         }
 

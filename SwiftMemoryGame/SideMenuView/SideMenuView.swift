@@ -3,6 +3,7 @@ import UIKit
 protocol SideMenuViewDelegate
 {
     func screenChosen(screen: String)
+    func signIn()
 }
 
 class SideMenuView: UIView, UITableViewDelegate, UITableViewDataSource

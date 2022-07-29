@@ -12,8 +12,8 @@ class RankingCell: UITableViewCell {
     func setUp (player: Player, indexPath: IndexPath)
     {
         nameLabel.text = player.name
-        timeLabel.text = "Time played: \(player.timeBeaten!)"
-        gameLabel.text = "Game Mode beaten: \(player.gameModePlayed!)"
+        timeLabel.text = "Time played: \(player.numTimeBeaten!)"
+        gameLabel.text = "Game Mode beaten: \(player.numGameModePlayed!)"
         rankLabel.text = String(indexPath.row + 1)
         rankLabelBackground.layer.cornerRadius = rankLabelBackground.frame.size.height / 2
 
