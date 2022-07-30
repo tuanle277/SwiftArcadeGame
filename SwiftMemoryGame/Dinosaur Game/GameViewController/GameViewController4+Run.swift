@@ -2,22 +2,64 @@ import UIKit
 
 extension GameViewController4
 {
-    func runGame()
+    @objc func runGame()
     {
         self.view.isUserInteractionEnabled = true
         self.stillGame = true
         self.block.layer.cornerRadius = self.block.frame.width / 2
         gameTimer = Timer.scheduledTimer(
-            timeInterval: 0.0025,
+            timeInterval: self.gameSpeed,
             target: self,
             selector: #selector(runRoad),
             userInfo: nil,
             repeats: true)
     }
-    
+
     @objc func runRoad()
     {
         self.scoreLabel.text = "\(Int(gameTime / 10))"
+        if self.gameSpeed > 0.0018
+        {
+            gameTimer.invalidate()
+            print("first")
+            print(self.gameSpeed)
+            self.gameSpeed -= 0.000001
+            runGame()
+        }
+        
+        if Int(gameTime / 10) >= 120 && Int(gameTime / 10) < 200
+        {
+            if self.gameSpeed > 0.0015
+            {
+                gameTimer.invalidate()
+                print("second")
+                self.gameSpeed -= 0.000001
+                runGame()
+            }
+        }
+        
+        if Int(gameTime / 10) == 200 && Int(gameTime / 10) < 280
+        {
+            if self.gameSpeed > 0.001
+            {
+                gameTimer.invalidate()
+                print(self.gameSpeed)
+                self.gameSpeed -= 0.000001
+                runGame()
+            }
+        }
+        
+        if Int(gameTime / 10) >= 280 && Int(-self.road.frame.origin.x) % Int(self.view.frame.width + 50 + self.block.frame.width) == 0
+        {
+            if self.gameSpeed > 0.0005
+            {
+                gameTimer.invalidate()
+                print(self.gameSpeed)
+                self.gameSpeed -= 0.000001
+                runGame()
+            }
+        }
+        
         gameTime += 0.1
         UIView.animate(withDuration: 0, delay: 0)
         { [self] in

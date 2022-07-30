@@ -125,6 +125,7 @@
 		A47F89AA288E374400BFD91D /* FirstViewController+SideMenuDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47F89A9288E374400BFD91D /* FirstViewController+SideMenuDelegate.swift */; };
 		A47F89AC288E3EA700BFD91D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47F89AB288E3EA700BFD91D /* ProfileViewController.swift */; };
 		A47F89AF288E4B8900BFD91D /* GameViewController+ConfigureUIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47F89AE288E4B8900BFD91D /* GameViewController+ConfigureUIs.swift */; };
+		A4DEB8D92895869B004E1478 /* —Pngtree—vector video game icon_4101325.png in Resources */ = {isa = PBXBuildFile; fileRef = A4DEB8D82895869B004E1478 /* —Pngtree—vector video game icon_4101325.png */; };
 		A4E1AEC2288C17C80086CA9E /* FirstViewController+ConfigureUIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E1AEC1288C17C80086CA9E /* FirstViewController+ConfigureUIs.swift */; };
 /* End PBXBuildFile section */
 
@@ -264,6 +265,7 @@
 		A47F89A9288E374400BFD91D /* FirstViewController+SideMenuDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FirstViewController+SideMenuDelegate.swift"; sourceTree = "<group>"; };
 		A47F89AB288E3EA700BFD91D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		A47F89AE288E4B8900BFD91D /* GameViewController+ConfigureUIs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GameViewController+ConfigureUIs.swift"; sourceTree = "<group>"; };
+		A4DEB8D82895869B004E1478 /* —Pngtree—vector video game icon_4101325.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "—Pngtree—vector video game icon_4101325.png"; sourceTree = "<group>"; };
 		A4E1AEC1288C17C80086CA9E /* FirstViewController+ConfigureUIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FirstViewController+ConfigureUIs.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -346,6 +348,7 @@
 				A4277E26286051FD007F66D5 /* Assets.xcassets */,
 				A4277E28286051FD007F66D5 /* LaunchScreen.storyboard */,
 				A4277E2B286051FD007F66D5 /* Info.plist */,
+				A4DEB8D82895869B004E1478 /* —Pngtree—vector video game icon_4101325.png */,
 			);
 			path = SwiftMemoryGame;
 			sourceTree = "<group>";
@@ -689,6 +692,7 @@
 				A4277E27286051FD007F66D5 /* Assets.xcassets in Resources */,
 				A4785BB2286425F400ABE9DD /* animeBoy58.jpeg in Resources */,
 				A4785BB1286425F400ABE9DD /* animeBoy87.jpeg in Resources */,
+				A4DEB8D92895869B004E1478 /* —Pngtree—vector video game icon_4101325.png in Resources */,
 				A45D5F6B2861BB10009C86C7 /* RankingCell.xib in Resources */,
 				A4785BAE286425F400ABE9DD /* animeBoy40.jpeg in Resources */,
 				A4785BA7286424AF00ABE9DD /* animeBoy120.jpeg in Resources */,

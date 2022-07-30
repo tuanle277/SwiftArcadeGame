@@ -6,6 +6,7 @@ class GameViewController4: UIViewController {
     var exist: Bool = false
     var obstacle: UIView = UIView.init()
     var gameTime: Double = 0.0
+    var gameSpeed: Double = 0.003
     var stillGame: Bool = false
     
     @IBOutlet weak var againButton: UIButton!

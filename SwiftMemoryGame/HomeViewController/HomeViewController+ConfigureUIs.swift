@@ -18,7 +18,6 @@ extension HomeViewController
     
     func configureUIs ()
     {
-
         self.titleLabel.adjustsFontSizeToFitWidth = true
         setGradientBackground()
         self.shadowView.alpha = 0.0

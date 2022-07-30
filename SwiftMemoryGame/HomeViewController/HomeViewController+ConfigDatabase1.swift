@@ -18,7 +18,6 @@ extension HomeViewController
         {
             print("path is now new Directory")
             let pathToDatabase: String = documentDirectory.appending("/\(dbFileName)")
-            print(pathToDatabase)
             FirstViewController.database = FMDatabase(path: pathToDatabase)
             }
         else

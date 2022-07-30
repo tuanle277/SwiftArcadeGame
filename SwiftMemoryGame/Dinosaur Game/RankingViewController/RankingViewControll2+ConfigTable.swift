@@ -9,6 +9,7 @@ extension RankingViewController2
         tableView.register(UINib(nibName: "RankingCell2", bundle: nil), forCellReuseIdentifier: RankingCell2.identifier)
         tableView.rowHeight = 100
         tableView.estimatedRowHeight = 100
+        tableView.backgroundColor = UIColor.white
         tableView.separatorStyle = .singleLine
     }
 }

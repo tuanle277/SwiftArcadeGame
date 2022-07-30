@@ -23,10 +23,8 @@ extension HomeViewController
             let gameMode: String = queryResults.string(forColumn: "gamemode")!
             let secondPlayed: Int = Int(queryResults.int(forColumn: "second"))
             let minutePlayed: Int = Int(queryResults.int(forColumn: "minute"))
-            print(name)
             FirstViewController.datas.append(Player(newName: name, newTime: time, newGame: gameMode, newMinute: minutePlayed, newSecond: secondPlayed))
         }
-        print(FirstViewController.datas)
         FirstViewController.database.close()
         sortDatas(low: 0, high: FirstViewController.datas.count - 1)
         FirstViewController.database.close()
