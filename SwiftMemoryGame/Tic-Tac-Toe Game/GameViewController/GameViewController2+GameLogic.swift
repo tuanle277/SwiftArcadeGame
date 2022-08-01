@@ -6,7 +6,6 @@ extension GameViewController2
     {
         if filled == 9 && !rowCrossed() && !colCrossed() && !diagCrossed()
         {
-            print("draw")
             gameView.isUserInteractionEnabled = false
             self.currentPlayerLabel.textColor = UIColor.red
             self.currentPlayerLabel.text = "Draw"

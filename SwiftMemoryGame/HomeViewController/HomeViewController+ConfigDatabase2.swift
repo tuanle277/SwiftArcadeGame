@@ -19,21 +19,21 @@ extension HomeViewController
             print("path is now new Directory")
             let pathToDatabase: String = documentDirectory.appending("/\(dbFileName)")
             print(pathToDatabase)
-            FirstViewController.database = FMDatabase(path: pathToDatabase)
+            HomeViewController.database = FMDatabase(path: pathToDatabase)
             }
         else
         {
             path = "/Users/leminhtuan/Desktop/IMT-soft/Swift/SwiftArcadeGame/players"
-            FirstViewController.database = FMDatabase(path: path)
+            HomeViewController.database = FMDatabase(path: path)
         }
         
-        FirstViewController.database.open()
+        HomeViewController.database.open()
                 
-        if !FirstViewController.database.tableExists("dinPlayers")
+        if !HomeViewController.database.tableExists("dinPlayers")
         {
             do
             {
-                try FirstViewController.database.executeUpdate("create table dinPlayers(name text, time text, intTime int)", values: nil)
+                try HomeViewController.database.executeUpdate("create table dinPlayers(name text, time text, intTime int)", values: nil)
             }
             catch
             {
@@ -55,6 +55,6 @@ extension HomeViewController
 //            };
 //        }
         
-        FirstViewController.database.close()
+        HomeViewController.database.close()
     }
 }

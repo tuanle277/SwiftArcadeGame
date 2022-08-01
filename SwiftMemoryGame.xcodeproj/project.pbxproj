@@ -114,6 +114,7 @@
 		A4785BB2286425F400ABE9DD /* animeBoy58.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A4785BAD286425F400ABE9DD /* animeBoy58.jpeg */; };
 		A4785BB428646BBE00ABE9DD /* RankingViewController+DeleteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4785BB328646BBE00ABE9DD /* RankingViewController+DeleteCell.swift */; };
 		A4785BB62864717000ABE9DD /* FirstViewController+SortFunctionDatas.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4785BB52864717000ABE9DD /* FirstViewController+SortFunctionDatas.swift */; };
+		A47A4F6628977D9600A093B1 /* GameViewController4+GetInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47A4F6528977D9600A093B1 /* GameViewController4+GetInfo.swift */; };
 		A47B63D5288F848C0015C2F9 /* GameViewController3+ViewDidLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47B63D4288F848C0015C2F9 /* GameViewController3+ViewDidLoad.swift */; };
 		A47B63D7288F84BC0015C2F9 /* GameViewController3+ViewDidAppear.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47B63D6288F84BC0015C2F9 /* GameViewController3+ViewDidAppear.swift */; };
 		A47B63D9288F85380015C2F9 /* GameViewController3+Winner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47B63D8288F85380015C2F9 /* GameViewController3+Winner.swift */; };
@@ -254,6 +255,7 @@
 		A4785BAD286425F400ABE9DD /* animeBoy58.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = animeBoy58.jpeg; path = SwiftMemoryGame/animeBoy58.jpeg; sourceTree = SOURCE_ROOT; };
 		A4785BB328646BBE00ABE9DD /* RankingViewController+DeleteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RankingViewController+DeleteCell.swift"; sourceTree = "<group>"; };
 		A4785BB52864717000ABE9DD /* FirstViewController+SortFunctionDatas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FirstViewController+SortFunctionDatas.swift"; sourceTree = "<group>"; };
+		A47A4F6528977D9600A093B1 /* GameViewController4+GetInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameViewController4+GetInfo.swift"; sourceTree = "<group>"; };
 		A47B63D4288F848C0015C2F9 /* GameViewController3+ViewDidLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameViewController3+ViewDidLoad.swift"; sourceTree = "<group>"; };
 		A47B63D6288F84BC0015C2F9 /* GameViewController3+ViewDidAppear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameViewController3+ViewDidAppear.swift"; sourceTree = "<group>"; };
 		A47B63D8288F85380015C2F9 /* GameViewController3+Winner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameViewController3+Winner.swift"; sourceTree = "<group>"; };
@@ -573,6 +575,7 @@
 			children = (
 				A46CC35F2892BE8700238ED5 /* GameViewController4.swift */,
 				A46CC3612892C19A00238ED5 /* GameViewController4+Run.swift */,
+				A47A4F6528977D9600A093B1 /* GameViewController4+GetInfo.swift */,
 			);
 			path = GameViewController;
 			sourceTree = "<group>";
@@ -812,6 +815,7 @@
 				A4367683288FDE7B001F0B41 /* GameViewController3+Reset.swift in Sources */,
 				A47363C92893C84B005942B7 /* RankingViewController2+ViewDidLoad.swift in Sources */,
 				A45D5F652861BA3A009C86C7 /* RankingViewController.swift in Sources */,
+				A47A4F6628977D9600A093B1 /* GameViewController4+GetInfo.swift in Sources */,
 				A45D5F752861C32C009C86C7 /* RankingViewController+ViewDidLoad.swift in Sources */,
 				A441EFC928617ACF00250CCA /* FirstViewController+GameMode.swift in Sources */,
 				A46EB68F2890F0F600A32C6E /* HomeViewController+ConfigDummyData.swift in Sources */,

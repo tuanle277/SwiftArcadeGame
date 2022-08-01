@@ -6,10 +6,10 @@ extension HomeViewController
     func fetchDataNum()
     {
         print("Fetching data......")
-        FirstViewController.database.open()
+        HomeViewController.database.open()
         do
         {
-            queryResults = try FirstViewController.database.executeQuery("SELECT * FROM players where gamemode = '4x4'", values: nil)
+            queryResults = try HomeViewController.database.executeQuery("SELECT * FROM players where gamemode = '4x4'", values: nil)
             print("query results got 1")
         }
         catch
@@ -25,18 +25,18 @@ extension HomeViewController
             let minutePlayed: Int = Int(queryResults.int(forColumn: "minute"))
             FirstViewController.datas.append(Player(newName: name, newTime: time, newGame: gameMode, newMinute: minutePlayed, newSecond: secondPlayed))
         }
-        FirstViewController.database.close()
+        HomeViewController.database.close()
         sortDatas(low: 0, high: FirstViewController.datas.count - 1)
-        FirstViewController.database.close()
+        HomeViewController.database.close()
     }
     
     func fetchDataDin()
     {
         print("Fetching data......")
-        FirstViewController.database.open()
+        HomeViewController.database.open()
         do
         {
-            queryResults = try FirstViewController.database.executeQuery("SELECT * FROM dinPlayers", values: nil)
+            queryResults = try HomeViewController.database.executeQuery("SELECT * FROM dinPlayers", values: nil)
             print("query results got 2")
         }
         catch
@@ -50,7 +50,7 @@ extension HomeViewController
             let intTime: Int = Int(queryResults.int(forColumn: "intTime"))
             FirstViewController4.datas.append(Player(newName: name, newTime: time, newIntTime: intTime))
         }
-        FirstViewController.database.close()
+        HomeViewController.database.close()
 //        sortDatas(low: 0, high: FirstViewController.datas.count - 1)
 //        FirstViewController.database.close()
     }

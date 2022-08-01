@@ -6,6 +6,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     var screenLoaded: Int = 0
     var queryResults: FMResultSet!
     var sideMenuOpened: Bool = false
+    static var database: FMDatabase!
     static var profileName: String!
     var datas: Array<Game> = [Game.init(newTitle: "Dinosaur", newBackgroundColor: UIColor.blue), Game.init(newTitle: "Rock paper scissor", newBackgroundColor: UIColor.orange), Game.init(newTitle: "Number memory", newBackgroundColor: UIColor.purple), Game.init(newTitle: "Tic Tac Toe", newBackgroundColor: UIColor.red)]
     

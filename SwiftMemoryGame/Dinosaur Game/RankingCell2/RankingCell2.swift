@@ -7,7 +7,7 @@ class RankingCell2: UITableViewCell {
     func setUp (player: Player, indexPath: IndexPath)
     {
         nameLabel.text = player.name
-        timeLabel.text = "Time played: \(player.dinTimeBeaten!) seconds"
+        timeLabel.text = "score: \(String(Int(floor(Double(player.dinIntTimeBeaten) / 10))))"
 
     }
     static var identifier: String = "RankingCell2"

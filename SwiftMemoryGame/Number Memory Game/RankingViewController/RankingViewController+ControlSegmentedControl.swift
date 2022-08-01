@@ -8,17 +8,17 @@ extension RankingViewController
         isFiltered = true
         filteredArray = []
         let index = segmentedControll.selectedSegmentIndex
-        FirstViewController.database.open()
+        HomeViewController.database.open()
         do
         {
             switch(index)
             {
             case 0:
-                resultQuery = try FirstViewController.database.executeQuery("SELECT * FROM players where gamemode = '4x4'", values: nil)
+                resultQuery = try HomeViewController.database.executeQuery("SELECT * FROM players where gamemode = '4x4'", values: nil)
             case 1:
-                resultQuery = try FirstViewController.database.executeQuery("SELECT * FROM players where gamemode = '6x6'", values: nil)
+                resultQuery = try HomeViewController.database.executeQuery("SELECT * FROM players where gamemode = '6x6'", values: nil)
             case 2:
-                resultQuery = try FirstViewController.database.executeQuery("SELECT * FROM players where gamemode = '8x8'", values: nil)
+                resultQuery = try HomeViewController.database.executeQuery("SELECT * FROM players where gamemode = '8x8'", values: nil)
             default:
                   return
             }
@@ -38,7 +38,7 @@ extension RankingViewController
         }
         
         sortFilters(low: 0, high: filteredArray.count - 1)
-        FirstViewController.database.close()
+        HomeViewController.database.close()
         tableView.reloadData()
     }
 }

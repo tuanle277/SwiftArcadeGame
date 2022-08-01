@@ -5,6 +5,7 @@ extension GameViewController3
     func winner() -> String
     {
         let botschoice = Int.random(in: 0...2)
+        self.botResult.textColor = UIColor.black
         self.botResult.text = "Bot chooses \(choices[botschoice])"
         self.choicesBackground.isUserInteractionEnabled = false
         if self.playerChoice == self.choices[botschoice]

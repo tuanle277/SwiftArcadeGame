@@ -10,6 +10,7 @@ extension GameViewController2
         currentPlayerLabel.text = "Player 1's turn"
         currentPlayerLabel.textColor = UIColor.black
         currentPlayer = 1
+        filled = 0
         gameView.isUserInteractionEnabled = true
         gameBeingPlayed = []
         makeTiles()

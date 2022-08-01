@@ -6,7 +6,6 @@ extension GameViewController4
     {
         self.view.isUserInteractionEnabled = true
         self.stillGame = true
-        self.block.layer.cornerRadius = self.block.frame.width / 2
         gameTimer = Timer.scheduledTimer(
             timeInterval: self.gameSpeed,
             target: self,
@@ -21,46 +20,44 @@ extension GameViewController4
         if self.gameSpeed > 0.0018
         {
             gameTimer.invalidate()
-            print("first")
-            print(self.gameSpeed)
             self.gameSpeed -= 0.000001
             runGame()
         }
         
-        if Int(gameTime / 10) >= 120 && Int(gameTime / 10) < 200
+        if Int(gameTime / 10) >= 200 && Int(gameTime / 10) < 600
         {
             if self.gameSpeed > 0.0015
             {
                 gameTimer.invalidate()
-                print("second")
                 self.gameSpeed -= 0.000001
+                incrementAmount = 0.2
                 runGame()
             }
         }
         
-        if Int(gameTime / 10) == 200 && Int(gameTime / 10) < 280
+        if Int(gameTime / 10) == 600 && Int(gameTime / 10) < 1000
         {
             if self.gameSpeed > 0.001
             {
                 gameTimer.invalidate()
-                print(self.gameSpeed)
                 self.gameSpeed -= 0.000001
+                incrementAmount = 0.3
                 runGame()
             }
         }
         
-        if Int(gameTime / 10) >= 280 && Int(-self.road.frame.origin.x) % Int(self.view.frame.width + 50 + self.block.frame.width) == 0
+        if Int(gameTime / 10) >= 1000 && Int(-self.road.frame.origin.x) % Int(self.view.frame.width + 50 + self.block.frame.width) == 0
         {
             if self.gameSpeed > 0.0005
             {
                 gameTimer.invalidate()
-                print(self.gameSpeed)
                 self.gameSpeed -= 0.000001
+                incrementAmount = 0.4
                 runGame()
             }
         }
         
-        gameTime += 0.1
+        gameTime += incrementAmount
         UIView.animate(withDuration: 0, delay: 0)
         { [self] in
             if Int(-self.road.frame.origin.x) % Int(self.view.frame.width + 50 + self.block.frame.width) == 0
@@ -78,9 +75,11 @@ extension GameViewController4
             if (self.block.frame.origin.x +  self.block.frame.width <= self.obstacle.frame.origin.x + self.obstacle.frame.width) && (self.block.frame.origin.x +  self.block.frame.width > self.obstacle.frame.origin.x) && (self.block.frame.origin.y + self.block.frame.height > self.obstacle.frame.origin.y) && (self.block.frame.origin.y + self.block.frame.height <= self.obstacle.frame.origin.y + self.obstacle.frame.height)
             {
                 self.resultLabel.text = "Game over"
+                self.block.layer.removeAllAnimations()
+                print(gameTime)
                 self.resultLabel.textColor = UIColor.red
                 gameTimer.invalidate()
-                self.stillGame = false
+                getInfo()
             }
         }
     }

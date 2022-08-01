@@ -22,14 +22,13 @@ class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     static var chosenGameMode: Int = 4
     var chosenGameMod: Int = 4
     var gameModePicker:UIPickerView!
-    static var database: FMDatabase!
-    var queryResults: FMResultSet!
     static var datas: Array <Player> = []
     var isNotSignedIn: Bool!
     static var username: String!
     var sideMenuOpened: Bool = false
     
-    @IBAction func backHomeAction(_ sender: UIButton) {
+    @IBAction func backHomeAction(_ sender: UIButton)
+    {
         dismiss(animated: true)
     }
     @IBOutlet weak var sideMenuView: SideMenuView!

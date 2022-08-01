@@ -37,7 +37,7 @@ class SideMenuView: UIView, UITableViewDelegate, UITableViewDataSource
         Bundle.main.loadNibNamed("SideMenuView", owner: self, options: nil)
         addSubview(sideMenuView)
         sideMenuView.isUserInteractionEnabled = true
-        titleLabel.text = "Kevin"
+        titleLabel.text = "made by Kevin"
         titleLabel.textColor = UIColor.black
         titleLabel.layer.borderColor = UIColor.black.cgColor
         sideMenuView.frame = self.bounds

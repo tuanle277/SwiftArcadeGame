@@ -3,7 +3,8 @@ import FMDB
 
 extension GameViewController
 {
-    func takeWinnerInfo() {
+    func takeWinnerInfo()
+    {
         if HomeViewController.profileName == nil
         {
             //configure alert
@@ -40,16 +41,16 @@ extension GameViewController
                 let textFields = infoAlert?.textFields else { return }
                 if let nameText = textFields[0].text{self.dismiss(animated: true);
                     FirstViewController.datas.append(Player(newName: nameText, newTime: "\(timeMin)\' : \(timeSecond)\"", newGame: gameModeWon, newMinute: GameViewController.minutePlayed, newSecond: GameViewController.secondPlayed));
-                    FirstViewController.database.open();
+                    HomeViewController.database.open();
                     do
                     {
-                        try FirstViewController.database.executeUpdate("INSERT into players (name, time, gamemode, second, minute) VALUES (?, ?, ?, ?, ?)", values: [nameText, "\(timeMin)\' : \(timeSecond)\"", gameModeWon!, GameViewController.secondPlayed!, GameViewController.minutePlayed!])
+                        try HomeViewController.database.executeUpdate("INSERT into players (name, time, gamemode, second, minute) VALUES (?, ?, ?, ?, ?)", values: [nameText, "\(timeMin)\' : \(timeSecond)\"", gameModeWon!, GameViewController.secondPlayed!, GameViewController.minutePlayed!])
                     }
                     catch
                     {
                         print("Cannot make new data")
                     };
-                    FirstViewController.database.close()
+                    HomeViewController.database.close()
     }})
             
             self.present(infoAlert, animated: true, completion: nil)
@@ -74,16 +75,16 @@ extension GameViewController
             }
             
             FirstViewController.datas.append(Player(newName: HomeViewController.profileName, newTime: "\(timeMin)\' : \(timeSecond)\"", newGame: gameModeWon, newMinute: GameViewController.minutePlayed, newSecond: GameViewController.secondPlayed));
-            FirstViewController.database.open();
+            HomeViewController.database.open();
             do
             {
-                try FirstViewController.database.executeUpdate("INSERT into players (name, time, gamemode, second, minute) VALUES (?,  ?, ?, ?, ?)", values: [HomeViewController.profileName!, "\(timeMin)\' : \(timeSecond)\"", gameModeWon!, GameViewController.secondPlayed!, GameViewController.minutePlayed!])
+                try HomeViewController.database.executeUpdate("INSERT into players (name, time, gamemode, second, minute) VALUES (?,  ?, ?, ?, ?)", values: [HomeViewController.profileName!, "\(timeMin)\' : \(timeSecond)\"", gameModeWon!, GameViewController.secondPlayed!, GameViewController.minutePlayed!])
             }
             catch
             {
                 print("Cannot make new data")
             }
-            FirstViewController.database.close()
+            HomeViewController.database.close()
             dismiss(animated: true)
         }
         

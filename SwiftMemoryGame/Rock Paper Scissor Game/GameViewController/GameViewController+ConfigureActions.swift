@@ -23,6 +23,7 @@ extension GameViewController3
                 self.rockView.alpha = 1.0
                })
         self.playerChoice = "Rock"
+        self.playerResult.textColor = UIColor.black
         self.playerResult.text = "Player picked Rock"
         self.currentPlayerLabel.text = winner()
     }
@@ -36,6 +37,7 @@ extension GameViewController3
             self.paperView.alpha = 1.0
            })
         self.playerChoice = "Paper"
+        self.playerResult.textColor = UIColor.black
         self.playerResult.text = "Player picked Paper"
         self.currentPlayerLabel.text = winner()
     }
@@ -49,6 +51,7 @@ extension GameViewController3
             self.scissorView.alpha = 1.0
            })
         self.playerChoice = "Scissor"
+        self.playerResult.textColor = UIColor.black
         self.playerResult.text = "Player picked Scissor"
         self.currentPlayerLabel.text = winner()
     }
