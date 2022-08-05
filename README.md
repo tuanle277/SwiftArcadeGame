@@ -9,3 +9,6 @@ a working Arcade center that allows users to interact and play multiple leisure 
 ![Simulator Screen Shot - iPhone 11 - 2022-07-26 at 16 14 29](https://user-images.githubusercontent.com/91571142/180971369-c43fb95b-d294-4f9e-9427-a11da1338656.png)
 ![Simulator Screen Shot - iPhone 11 - 2022-07-26 at 16 14 34](https://user-images.githubusercontent.com/91571142/180971378-35e9da79-295c-4537-9efe-f1c126235d4d.png)
 ![Simulator Screen Shot - iPhone 11 - 2022-07-26 at 16 14 44](https://user-images.githubusercontent.com/91571142/180971386-59f7a920-8e66-4d92-b687-288e343b4af7.png)
+![Simulator Screen Shot - iPhone 11 - 2022-08-05 at 16 56 50](https://user-images.githubusercontent.com/91571142/183053441-96994df8-52ce-4c1f-af97-ab6f92f4fd05.png)
+![Simulator Screen Shot - iPhone 11 - 2022-08-05 at 16 56 47](https://user-images.githubusercontent.com/91571142/183053459-18a73609-d676-4fbb-8341-899fe2619d53.png)
+![Simulator Screen Shot - iPhone 11 - 2022-08-05 at 16 56 43](https://user-images.githubusercontent.com/91571142/183053469-f8d77509-aeaf-420a-af58-5479a870a680.png)
